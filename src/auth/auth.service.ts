@@ -18,10 +18,11 @@ export class AuthService {
         hash,
       },
     });
+    delete user.hash;
 
     // return the saved user
 
-    return 'i am signed up';
+    return user;
   }
   signin() {
     return 'I am signed in';
